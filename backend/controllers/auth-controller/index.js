@@ -76,20 +76,7 @@ export const loginUser = async (req, res) => {
       JWT_SECRET,
       { expiresIn: '1h' }
     );
-    // res
-    //   .cookie('token', token, {
-    //     httpOnly: true,
-    //     secure: false,
-    //   })
-    //   .json({
-    //     success: true,
-    //     message: 'Logged in successfully',
-    //     user: {
-    //       email: Checkuser.email,
-    //       username: Checkuser.username,
-    //       id: Checkuser._id,
-    //     },
-    //   });
+
 
     res.status(200).json({
       success: true,

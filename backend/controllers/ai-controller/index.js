@@ -1,4 +1,4 @@
-import * as ai from '../../service/ai.js'; // ← also include “.js”
+import * as ai from '../../service/ai.js'; 
 
 export const getResult = async (req, res) => {
   try {
